@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Jellyfish : A combination of the ESP8266 and some LPD6803 based LEDs">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jellyfish</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/area3001/jellyfish">View on GitHub</a>
+
+          <h1 id="project_title">Jellyfish</h1>
+          <h2 id="project_tagline">A combination of the ESP8266 and some LPD6803 based LEDs</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/area3001/jellyfish/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/area3001/jellyfish/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="jellyfish" class="anchor" href="#jellyfish" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jellyfish</h2>
+
+<p>Jellyfish is an implementation of our <a href="https://github.com/area3001/esp8266-arduino-lpd6803">LPD6803 driver</a> for the ESP8266 combined with a MQTT client.</p>
+
+<p><img src="https://raw.githubusercontent.com/area3001/jellyfish/master/img/LIGHTS.JPG" alt="Example Schematic"></p>
+
+<h3>
+<a id="hardware" class="anchor" href="#hardware" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hardware</h3>
+
+<p>At the heart of Jellyfish there's an ESP12E module combined with a <a href="http://www.ti.com/product/txb0106">TXB0106</a> and many options for sensors. The board we're using is the <a href="https://github.com/phyx-be/ESP12_DEV">ESP12_DEV</a> board.
+<img src="https://raw.githubusercontent.com/area3001/jellyfish/master/img/ESP12_DEV00_0.jpg" alt="DEV Board"></p>
+
+<p>The pixels used in Jellyfish feature a LPD6803 IC paired with 4 RGB LEDs each to improve the pixel brightness. The pixels are arranged in a 8x8 configuration to create a large (approx. 1m by 1m) LED panel. the panel itself is fabricated using a thick 18mm piece of MDF wood for the back side, and 4mm thick MDF for the cross sections. The side panels and top panel will be made from opaque acryl.</p>
+
+<p><img src="https://raw.githubusercontent.com/area3001/jellyfish/master/img/LPD6803_PIXEL.jpg" alt="Pixel">
+<img src="https://raw.githubusercontent.com/area3001/jellyfish/master/img/PANEL_CLOSEUP.jpg" alt="Panel closeup"></p>
+
+<h3>
+<a id="software" class="anchor" href="#software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software</h3>
+
+<h4>
+<a id="client" class="anchor" href="#client" aria-hidden="true"><span class="octicon octicon-link"></span></a>Client</h4>
+
+<p>Thanks to the folks from the <a href="https://github.com/esp8266">ESP8266 Community Forum</a> we've been able to program the ESP12E using the Arduino IDE resulting in an easy to understand and easy to modify program.</p>
+
+<h4>
+<a id="server" class="anchor" href="#server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Server</h4>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jellyfish maintained by <a href="https://github.com/area3001">area3001</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35123769-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
